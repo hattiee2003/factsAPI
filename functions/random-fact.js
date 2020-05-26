@@ -2,7 +2,7 @@ const facts = [
     'I like turtles',
     'I lived on a farm once',
     'I love dumplings',
-    'I like Shawn Mendes'
+    'Shawn Mendes is my favourite singer'
 ]
 
 exports.handler = async (event, context) => {
