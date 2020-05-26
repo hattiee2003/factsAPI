@@ -1,8 +1,8 @@
 const facts = [
-    'Fact one.',
-    'Fact two.',
-    'Fact three.',
-    'Fact four.'
+    'I like turtles',
+    'I lived on a farm once',
+    'I love dumplings',
+    'I like Shawn Mendes'
 ]
 
 exports.handler = async (event, context) => {
