@@ -1,3 +1,4 @@
+<script>
 const facts = [
     'I like turtles🐢',
 	'I lived on a farm once🌱',
@@ -9,10 +10,21 @@ const facts = [
 
 exports.handler = async (event, context) => {
     const index = Math.floor(Math.random() * facts.length)
-    const fact = facts[index]
+    const randomFact = facts[index]
 
     return {
         statusCode: 200,
         body: fact
     }
 }
+</script>
+
+<h1>Facts about me!!!!</h1>
+
+<button on:click={facts}>
+	Click to get a fact!
+</button>
+
+<p>
+	{randomFact}
+</p>
