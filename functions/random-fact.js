@@ -1,4 +1,3 @@
-<script>
 const facts = [
     'I like turtles🐢',
 	'I lived on a farm once🌱',
@@ -17,14 +16,3 @@ exports.handler = async (event, context) => {
         body: fact
     }
 }
-</script>
-
-<h1>Facts about me!!!!</h1>
-
-<button on:click={facts}>
-	Click to get a fact!
-</button>
-
-<p>
-	{randomFact}
-</p>
