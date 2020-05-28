@@ -9,7 +9,7 @@ const facts = [
 
 exports.handler = async (event, context) => {
     const index = Math.floor(Math.random() * facts.length)
-    const randomFact = facts[index]
+    const fact = facts[index]
 
     return {
         statusCode: 200,
