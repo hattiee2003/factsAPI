@@ -9,10 +9,10 @@ let facts = [
 
 exports.handler = async (event, context) => {
     let index = Math.floor(Math.random() * facts.length)
-    outputFact = facts[index].fact
+    let outputFact = JSON.stringify(facts[index])
 
     return {
         statusCode: 200,
-        body: facts[index].fact
+        body: outputFact
     }
 }
